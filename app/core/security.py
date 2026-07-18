@@ -1,8 +1,8 @@
 from datetime import datetime, timedelta, timezone
 from jose import jwt, JWTError
 from passlib.context import CryptContext
+from app.core.config import SECRET_KEY
 
-SECRET_KEY = "CHANGE_THIS_LATER_dev_only_secret_key"
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 60
 
